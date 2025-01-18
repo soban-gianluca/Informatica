@@ -48,7 +48,7 @@ public class RicercaPrimi {
 
     public int trovaMassimoPrimoThreads(int[] vett) {
         int nThread = 4;            //numero di thread da utilizzare
-        Thread[] threads = new Thread[nThread];
+        Thread[] threads = new Thread[nThread];     //array di thread
         int[] maxPrimes = new int[nThread];
 
         for (int i = 0; i < nThread; i++) {

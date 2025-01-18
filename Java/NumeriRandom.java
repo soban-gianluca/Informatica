@@ -14,7 +14,7 @@ public class NumeriRandom{
                 System.err.print("Inserire almeno un numero: ");
         }while(n<1);
 
-        GetTettiMassimi(num1, num2);
+        /* GetTettiMassimi(num1, num2); */
 
     } 
 }

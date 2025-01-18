@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-10 09:08:23 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTA7IjA4OjQ4OjA3ICI7MTk0Mg=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTA7IjA5OjA4OjIzICI7MTsyMDQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzo, totale, TASSA1, TASSA2" type="Real" array="False" size=""/>
+            <assign variable="TASSA1" expression="16"/>
+            <assign variable="TASSA2" expression="21"/>
+            <output expression="&quot;Inserisci il prezzo del prodotto acquistato: &quot;" newline="True"/>
+            <input variable="prezzo"/>
+            <if expression="prezzo&lt;10">
+                <then>
+                    <output expression="&quot;Il prezzo da pagare ammonta  a: &quot; &amp; prezzo &amp; &quot; euro.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="prezzo&lt;100">
+                        <then>
+                            <assign variable="totale" expression="prezzo+(prezzo*TASSA1/100)"/>
+                            <output expression="&quot;Il prezzo da pagare ammonta  a: &quot; &amp; totale &amp; &quot; euro.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="totale" expression="prezzo+(prezzo*TASSA2/100)"/>
+                            <output expression="&quot;Il prezzo da pagare ammonta  a: &quot; &amp; totale &amp; &quot; euro.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="STUDENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 11:21:56 "/>
+        <attribute name="created" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTEwLTA0OyIxMToxMjo0NCAiOzIzMjQ="/>
+        <attribute name="edited" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTEwLTA0OyIxMToyMTo1NiAiOzE7MjQzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Inserisci il terzo numero: &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="a&gt;c">
+                        <then>
+                            <output expression="a &amp; &quot; e' il numero maggiore.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="c &amp; &quot; e' il numero maggiore.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b&gt;c">
+                        <then>
+                            <output expression="b &amp; &quot; e' il numero maggiore.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="c &amp; &quot; e' il numero maggiore.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 10:41:20 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjEwOjI0OjM3ICI7MTkzNQ=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjEwOjQxOjIwICI7MzsyMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="spesa, totale" type="Real" array="False" size=""/>
+            <declare name="SCONTO1, SCONTO2, SCONTO3, SCONTO4" type="Integer" array="False" size=""/>
+            <assign variable="SCONTO1" expression="5"/>
+            <assign variable="SCONTO2" expression="6"/>
+            <assign variable="SCONTO3" expression="7"/>
+            <assign variable="SCONTO4" expression="10"/>
+            <output expression="&quot;Inserisci il costo della spesa: &quot;" newline="True"/>
+            <input variable="spesa"/>
+            <if expression="spesa&lt;50">
+                <then>
+                    <assign variable="totale" expression="spesa-(spesa*SCONTO1/100)"/>
+                </then>
+                <else>
+                    <if expression="spesa&lt;65">
+                        <then>
+                            <assign variable="totale" expression="spesa-(spesa*SCONTO2/100)"/>
+                        </then>
+                        <else>
+                            <if expression="spesa&lt;80">
+                                <then>
+                                    <assign variable="totale" expression="spesa-(spesa*SCONTO3/100)"/>
+                                </then>
+                                <else>
+                                    <assign variable="totale" expression="spesa-(spesa*SCONTO4/100)"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Il totale da pagare ammonta a: &quot; &amp; totale &amp; &quot; euro&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

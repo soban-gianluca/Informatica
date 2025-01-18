@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="STUDENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-29 09:42:17 "/>
+        <attribute name="created" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTA5LTI5OyIwOTozNjozMyAiOzIzNTA="/>
+        <attribute name="edited" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTA5LTI5OyIwOTo0MjoxNyAiOzE7MjQ1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="spesa" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci l'ammontare della spesa: &quot;" newline="True"/>
+            <input variable="spesa"/>
+            <if expression="spesa&lt;50">
+                <then>
+                    <assign variable="spesa" expression="spesa-(spesa*10/100)"/>
+                    <output expression="&quot;L'importo da pagare ammonta a:&quot; &amp; spesa" newline="True"/>
+                </then>
+                <else>
+                    <if expression="spesa&lt;100">
+                        <then>
+                            <assign variable="spesa" expression="spesa-(spesa*20/100)"/>
+                            <output expression="&quot;L'importo da pagare ammonta a:&quot; &amp; spesa" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="spesa" expression="spesa-(spesa*30/100)"/>
+                            <output expression="&quot;L'importo da pagare ammonta a:&quot; &amp; spesa" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

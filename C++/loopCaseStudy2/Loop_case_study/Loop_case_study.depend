@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638813110 source:c:\users\miche\onedrive\documenti\codeblocks\marconi_3ia\loop_case_study\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

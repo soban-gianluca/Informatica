@@ -1,0 +1,40 @@
+Modellazione Automobile
+Attributi:
+- Marca [s]
+- Modello [s]
+- Colore [s]
+- Capienza [int]
+- Targa [s]
+- Numero porte [int]
+- Carburante (Gasolio Benzina Elettrico Ibrido) [char]
+- Velocità massima [int]
+- Consumo carburante (l/100km kw/100km) [double]
+- Km totali [int]
+- Km parziali [int]
+- Velocità attuale [int]
+- Capacità (litri o kw) [int]
+- Livello serbatoio [int]
+- Acceso/spento [bool]
+
+Metodi:
+- AccensioneSpegnimento()
+- Muoviti(Km, )
+- incrementoVelocita()/decrementoVelocita()
+
+public Automobile(String marca, String modello, String colore, int capienza, String targa, int numPorte, char carburante, int velMax, double consumoCarb ,int kmTotali ,int kmParziali ,int velAttuale ,int capacita ,int livelloSerbatoio, boolean accSpen){
+    this.marca = marca;
+    this.modello = modello;
+    this.colore = colore;
+    this.capienza = capienza;
+    this.targa = targa;
+    this.numPorte = numPorte;
+    this.carburante = carburante;
+    this.velMax = velMax;
+    this.consumoCarb = consumoCarb;
+    this.kmTotali = kmTotali;
+    this.kmParziali = kmParziali;
+    this.velAttuale = velAttuale;
+    this.capacita = capacita;
+    this.livelloSerbatoio = livelloSerbatoio;
+    this.accSpen = accSpen;
+}

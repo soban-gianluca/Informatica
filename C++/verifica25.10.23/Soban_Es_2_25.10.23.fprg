@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gianluca.soban_isisb"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-25 10:21:32 "/>
+        <attribute name="created" value="Z2lhbmx1Y2Euc29iYW5faXNpc2I7SVNJU0JFTTsyMDIzLTEwLTI1OyIxMDoxMDoyMyAiOzM3NDc="/>
+        <attribute name="edited" value="Z2lhbmx1Y2Euc29iYW5faXNpc2I7SVNJU0JFTTsyMDIzLTEwLTI1OyIxMDoyMTozMiAiOzE7Mzg1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temp, parziale, media" type="Real" array="False" size=""/>
+            <declare name="conta" type="Integer" array="False" size=""/>
+            <assign variable="parziale" expression="0"/>
+            <assign variable="conta" expression="0"/>
+            <output expression="&quot;Inserisci la temperatura registrata, inserire 0 per uscire &quot;" newline="True"/>
+            <input variable="temp"/>
+            <while expression="temp!=0">
+                <assign variable="conta" expression="conta+1"/>
+                <assign variable="parziale" expression="parziale+temp"/>
+                <output expression="&quot;Inserisci la temperatura registrata, inserire 0 per uscire &quot;" newline="True"/>
+                <input variable="temp"/>
+            </while>
+            <assign variable="media" expression="parziale/conta"/>
+            <output expression="&quot;La media delle temperature e' di: &quot; &amp; media &amp; &quot; gradi.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

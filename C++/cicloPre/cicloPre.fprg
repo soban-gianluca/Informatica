@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 01:45:01 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjAxOjM5OjA5ICI7MTk0MA=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjAxOjQ1OjAxICI7MTsyMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <while expression="num&lt;20">
+                <assign variable="num" expression="num+2"/>
+                <output expression="num" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

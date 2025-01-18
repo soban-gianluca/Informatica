@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="STUDENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 12:31:09 "/>
+        <attribute name="created" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTA5LTI3OyIxMjoyMzoxNSAiOzIzMzg="/>
+        <attribute name="edited" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTA5LTI3OyIxMjozMTowOSAiOzE7MjQ0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, swap" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="swap" expression="x"/>
+            <assign variable="x" expression="y"/>
+            <assign variable="y" expression="swap"/>
+            <output expression="&quot;x vale &quot; &amp; x &amp; &quot;; y vale &quot; &amp; y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

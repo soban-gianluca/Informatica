@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-08 06:12:48 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTEtMDg7IjA1OjMwOjA4ICI7MTkzOQ=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTEtMDg7IjA2OjEyOjQ4ICI7MjsyMDUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, voto, parz" type="Real" array="False" size=""/>
+            <declare name="alunni, conta, contaSuff, contaNeg" type="Integer" array="False" size=""/>
+            <assign variable="conta" expression="0"/>
+            <assign variable="contaSuff" expression="0"/>
+            <assign variable="contaNeg" expression="0"/>
+            <assign variable="parz" expression="0"/>
+            <output expression="&quot;Inserisci il numero degli alunni: &quot;" newline="True"/>
+            <input variable="alunni"/>
+            <while expression="conta!=alunni">
+                <output expression="&quot;Inserisci il voto: &quot;" newline="True"/>
+                <input variable="voto"/>
+                <if expression="voto&gt;=6">
+                    <then>
+                        <assign variable="contaSuff" expression="contaSuff+1"/>
+                    </then>
+                    <else>
+                        <assign variable="contaNeg" expression="contaNeg+1"/>
+                    </else>
+                </if>
+                <assign variable="conta" expression="conta+1"/>
+                <assign variable="parz" expression="voto+parz"/>
+            </while>
+            <assign variable="media" expression="parz/alunni"/>
+            <output expression="&quot;La media della classe e': &quot; &amp; media" newline="True"/>
+            <output expression="&quot;Ci sono &quot; &amp; contaSuff &amp; &quot; voti sufficienti.&quot;" newline="True"/>
+            <output expression="&quot;Ci sono &quot; &amp; contaNeg &amp; &quot; voti insufficienti.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

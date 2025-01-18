@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-23 08:53:18 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMDktMjM7IjA4OjQ0OjAzICI7MTk0Ng=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMDktMjM7IjA4OjUzOjE4ICI7MTsyMDYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzo, sconto, scontoCalcolato, scontato" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il prezzo del prodotto da scontare: &quot;" newline="True"/>
+            <input variable="prezzo"/>
+            <output expression="&quot;Inserisci lo sconto da applicare: &quot;" newline="True"/>
+            <input variable="sconto"/>
+            <assign variable="scontoCalcolato" expression="(prezzo*sconto)/100"/>
+            <assign variable="scontato" expression="prezzo-scontoCalcolato"/>
+            <output expression="&quot;Il prezzo scontato da pagare e' di: &quot; &amp; scontato &amp; &quot; euro&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+*Analisi quantitativa*
+
+- numero di parole
+- numero di lettere
+- parola più lunga
+- numero di frasi e paragrafi
+- lunghezza media di frasi e paragrafi
+
+*Analisi qualitativa*
+
+- frequenza delle parole
+- punteggiatura
+- lunghezza frasi
+- numero di paragrafi
+
+1) preparare il testo
+2) leggere il testo
+3) riconoscere caratteri non significativi
+4) determinare i terminatori di parole
+5) stampare a video

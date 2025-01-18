@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gianluca.soban_isisb"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-25 10:23:18 "/>
+        <attribute name="created" value="Z2lhbmx1Y2Euc29iYW5faXNpc2I7SVNJU0JFTTsyMDIzLTEwLTI1OyIxMDowMDoyOCAiOzM3NTE="/>
+        <attribute name="edited" value="Z2lhbmx1Y2Euc29iYW5faXNpc2I7SVNJU0JFTTsyMDIzLTEwLTI1OyIxMDoyMzoxOCAiOzM7Mzg2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="spesa" type="Real" array="False" size=""/>
+            <declare name="punti, IMP1, IMP2" type="Integer" array="False" size=""/>
+            <assign variable="IMP1" expression="50"/>
+            <assign variable="IMP2" expression="100"/>
+            <assign variable="punti" expression="0"/>
+            <assign variable="spesa" expression="0"/>
+            <output expression="&quot;Inserisci il la sepsa:&quot;" newline="True"/>
+            <input variable="spesa"/>
+            <if expression="spesa&lt;=IMP1">
+                <then>
+                    <assign variable="punti" expression="spesa/5"/>
+                </then>
+                <else>
+                    <if expression="spesa&gt;IMP1 and spesa&lt;=IMP2">
+                        <then>
+                            <assign variable="punti" expression="spesa/4"/>
+                        </then>
+                        <else>
+                            <assign variable="punti" expression="spesa/3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Hai guadagnato &quot; &amp; punti &amp; &quot; punti.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

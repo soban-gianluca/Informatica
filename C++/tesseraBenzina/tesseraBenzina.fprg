@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 02:56:07 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTAtMDM7IjAyOjI2OjAzICI7MTkzMA=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTAtMDM7IjAyOjU2OjA3ICI7MzsyMDQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numTessera, sconto" type="Integer" array="False" size=""/>
+            <declare name="costoLitro, numLitri, costo, totale" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di tessera: &quot;" newline="True"/>
+            <input variable="numTessera"/>
+            <output expression="&quot;Inserisci il prezzo del carburante al litro: &quot;" newline="True"/>
+            <input variable="costoLitro"/>
+            <output expression="&quot;Inserisci litri inseriri: &quot;" newline="True"/>
+            <input variable="numLitri"/>
+            <assign variable="costo" expression="numLitri*costoLitro"/>
+            <if expression="numTessera&gt;=10000 and numTessera&lt;=50000">
+                <then>
+                    <if expression="numTessera&lt;20000">
+                        <then>
+                            <assign variable="sconto" expression="10"/>
+                            <assign variable="totale" expression="costo - (costo*sconto/100)"/>
+                            <output expression="&quot;Il totale da pagare e' di: &quot; &amp; totale &amp; &quot; euro&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="numTessera&lt;30000">
+                                <then>
+                                    <assign variable="sconto" expression="8"/>
+                                    <assign variable="totale" expression="costo - (costo*sconto/100)"/>
+                                    <output expression="&quot;Il totale da pagare e' di: &quot; &amp; totale &amp; &quot; euro&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="numTessera&lt;40000">
+                                        <then>
+                                            <assign variable="sconto" expression="6"/>
+                                            <assign variable="totale" expression="costo - (costo*sconto/100)"/>
+                                            <output expression="&quot;Il totale da pagare e' di: &quot; &amp; totale &amp; &quot; euro&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="sconto" expression="4"/>
+                                            <assign variable="totale" expression="costo - (costo*sconto/100)"/>
+                                            <output expression="&quot;Il totale da pagare e' di: &quot; &amp; totale &amp; &quot; euro&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Non hai diritto a nessuno sconto&quot;" newline="True"/>
+                    <output expression="&quot;Il totale da pagare e' di: &quot; &amp; costo &amp; &quot; euro&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 01:31:08 "/>
+        <attribute name="created" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjAxOjIwOjIwICI7MTkyMw=="/>
+        <attribute name="edited" value="Z2lhbmc7TVNJOzIwMjMtMTAtMTM7IjAxOjMxOjA4ICI7MTsyMDM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eta" type="Integer" array="False" size=""/>
+            <do expression="eta&lt;0 or eta&gt;120">
+                <output expression="&quot;Inserisci la tua eta': &quot;" newline="True"/>
+                <input variable="eta"/>
+            </do>
+            <output expression="eta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

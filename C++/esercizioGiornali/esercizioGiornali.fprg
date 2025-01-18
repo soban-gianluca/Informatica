@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="STUDENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 12:46:40 "/>
+        <attribute name="created" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTEwLTA0OyIxMTozNjo1OCAiOzIzMzU="/>
+        <attribute name="edited" value="U1RVREVOVEU7SVNJU0JFTTsyMDIzLTEwLTA0OyIxMjo0Njo0MCAiOzEwOzI0ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome1, nome2, nome3" type="String" array="False" size=""/>
+            <declare name="copie1, copie2, copie3" type="Real" array="False" size=""/>
+            <declare name="PREZZO1, PREZZO2, PREZZO3, guadagnoTot, guadagno1, guadagno2, guadagno3" type="Real" array="False" size=""/>
+            <assign variable="PREZZO1" expression="0.10"/>
+            <assign variable="PREZZO2" expression="0.20"/>
+            <assign variable="PREZZO3" expression="0.30"/>
+            <output expression="&quot;Inserisci il nome del primo giornale: &quot;" newline="True"/>
+            <input variable="nome1"/>
+            <output expression="&quot;Inserisci le copie vendute da quel giornale: &quot;" newline="True"/>
+            <input variable="copie1"/>
+            <output expression="&quot;Inserisci il nome del secondo giornale: &quot;" newline="True"/>
+            <input variable="nome2"/>
+            <output expression="&quot;Inserisci le copie vendute da quel giornale: &quot;" newline="True"/>
+            <input variable="copie2"/>
+            <output expression="&quot;Inserisci il nome del terzo giornale: &quot;" newline="True"/>
+            <input variable="nome3"/>
+            <output expression="&quot;Inserisci le copie vendute da quel giornale: &quot;" newline="True"/>
+            <input variable="copie3"/>
+            <if expression="copie1&gt;copie2">
+                <then>
+                    <if expression="copie1&gt;copie3">
+                        <then>
+                            <output expression="&quot;il giornale che ha venduto di piu' e': &quot; &amp; nome1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;il giornale che ha venduto di piu' e': &quot; &amp; nome3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="copie2&gt;copie3">
+                        <then>
+                            <output expression="&quot;il giornale che ha venduto di piu' e': &quot; &amp; nome2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;il giornale che ha venduto di piu' e': &quot; &amp; nome3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="copie1&gt;0 and copie1&lt;200">
+                <then>
+                    <assign variable="guadagno1" expression="copie1*PREZZO1"/>
+                </then>
+                <else>
+                    <if expression="copie1&gt;200 and copie1&lt;300">
+                        <then>
+                            <assign variable="guadagno1" expression="copie1*PREZZO2"/>
+                        </then>
+                        <else>
+                            <assign variable="guadagno1" expression="copie1*PREZZO3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="copie2&gt;0 and copie2&lt;200">
+                <then>
+                    <assign variable="guadagno2" expression="copie2*PREZZO1"/>
+                </then>
+                <else>
+                    <if expression="copie2&gt;200 and copie2&lt;300">
+                        <then>
+                            <assign variable="guadagno2" expression="copie2*PREZZO2"/>
+                        </then>
+                        <else>
+                            <assign variable="guadagno2" expression="copie2*PREZZO3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="copie3&gt;0 and copie3&lt;200">
+                <then>
+                    <assign variable="guadagno3" expression="copie3*PREZZO1"/>
+                </then>
+                <else>
+                    <if expression="copie3&gt;200 and copie3&lt;300">
+                        <then>
+                            <assign variable="guadagno3" expression="copie3*PREZZO2"/>
+                        </then>
+                        <else>
+                            <assign variable="guadagno3" expression="copie3*PREZZO3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="guadagnoTot" expression="guadagno1+guadagno2+guadagno3"/>
+            <output expression="&quot;il guadagno totale del giornalaio ammonta a: &quot; &amp; guadagnoTot &amp; &quot; euro&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

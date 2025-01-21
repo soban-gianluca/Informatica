@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class RicercaPrimi {
-    final int NMAX = 10000000;
-    final int DIM = 10000000;
+    final int NMAX = 1000000000;
+    final int DIM = 1000000;
     int pMax = -1;
 
     int[] arr = new int[DIM];
